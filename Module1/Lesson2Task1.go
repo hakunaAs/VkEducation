@@ -1,4 +1,4 @@
-package Modul1
+package Module1
 
 // CountNotEqual выполняет поиск элемента с помощью алгоритма двух указателей
 func CountNotEqual(elements []int, nonEquivalent int) int {

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"VkEducation/Modul1"
+	"VkEducation/Module1"
 	"fmt"
 	"time"
 )
@@ -22,7 +22,7 @@ func testByTime(countFunc func(elements []int, nonEquivalent int) int) {
 
 func main() {
 	//Выполнено за 446.2497ms
-	testByTime(Modul1.CountNotEqual)
+	testByTime(Module1.CountNotEqual)
 	//Выполнено за 602.3725ms
-	testByTime(Modul1.CountNotEqualLineal)
+	testByTime(Module1.CountNotEqualLineal)
 }
