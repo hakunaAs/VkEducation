@@ -1,7 +1,11 @@
-package Module1
+package Lesson2Task1
+
+import "VkEducation/FunctionExt"
+
+type intArray FunctionExt.IntArray
 
 // CountNotEqual выполняет поиск элемента с помощью алгоритма двух указателей
-func CountNotEqual(elements []int, nonEquivalent int) int {
+func CountNotEqual(elements intArray, nonEquivalent int) int {
 	var rightIndex = len(elements) - 1
 	var ret = 0
 	for leftIndex := 0; leftIndex <= rightIndex; leftIndex++ {
@@ -17,7 +21,7 @@ func CountNotEqual(elements []int, nonEquivalent int) int {
 }
 
 // CountNotEqualLineal выполняет поиск элемента с помощью классического линейного поиска
-func CountNotEqualLineal(elements []int, x int) int {
+func CountNotEqualLineal(elements intArray, x int) int {
 	count := 0
 	for _, v := range elements {
 		if v != x {
